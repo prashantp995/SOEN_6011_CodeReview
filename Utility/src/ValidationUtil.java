@@ -13,10 +13,10 @@ class ValidationUtil {
   static boolean validateOutputRange(double output) {
     boolean result = true;
     if (output == Double.POSITIVE_INFINITY) {
-      System.out.println(UIMessages.ERROR_MESSAGE_RANGE_OUTPUT_MAX);
+      System.out.println(UserInterfaceMessages.ERROR_MESSAGE_RANGE_OUTPUT_MAX);
       result = false;
     } else if (output == Double.NEGATIVE_INFINITY) {
-      System.out.println(UIMessages.ERROR_MESSAGE_RANGE_OUTPUT_MIN);
+      System.out.println(UserInterfaceMessages.ERROR_MESSAGE_RANGE_OUTPUT_MIN);
       result = false;
     }
     return result;
